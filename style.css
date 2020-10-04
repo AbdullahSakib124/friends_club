@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+.site-headers{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(57deg, #dda1dfc2, #4e0255);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+}
+nav{
+	width: 100%;
+	height: 100px;
+	color: white;
+	display: flex;
+
+}
+.logo{
+	width: 30%;
+	height: 60%;
+}
+.logo h1{
+	line-height: 40px; 
+	padding-left: 50px;
+}
+.menu{
+	width: 50%;
+	height: 100px;	
+}
+.menu ul{
+	width: 100%;
+	height: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu ul li{
+	list-style: none;
+	font-size: 12px;  
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.menu ul li a{
+	color: white;
+	text-decoration: none;
+}
+.account{
+	display: none;
+}
+.menu ul li:hover .account{
+	display: block;
+    position: absolute;
+    background: linear-gradient(40deg, rgb(154, 200, 214),rgba(168, 85, 189, 0.795));
+    margin-top:15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .account ul{
+	display: block;
+    margin: 10px;
+}
+.menu ul li:hover .account ul li{
+    width: 150px;
+    padding: 10px;
+    border: 2px dotted;
+    border-radius: 2px;
+    text-align: center;
+
+}
+section{
+	display: flex;
+}
+.leftside{
+	width: 55%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 20px;       
+}
+.leftside img{
+	width: 400;
+	height: 300px;
+}
+.rightside{
+	width: 45%;
+	height: 200px; 
+	color: navy;
+	font-style: italic;
+	text-align: center;
+	margin: 0px; 
+	padding:30px;
+}
+.rightside h1{
+	font-size: 25px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.rightside p{
+	font-size: 1.1rem;
+	padding:30px 0;
+}
+.rightside button{
+	font-size: 20px; 
+	font-weight: bold;
+	color: rgb(22, 1, 1);
+	text-transform: uppercase;
+	background: linear-gradient(57deg, #dda1dfc2, #4e0255);
+	border-radius: 4px; 
+	padding: 20px 35px;
+}
+.rightside button:hover{
+	background: linear-gradient(57deg, #4e0255, #dda1dfc2);
+	
+}
